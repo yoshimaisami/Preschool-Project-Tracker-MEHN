@@ -1,0 +1,27 @@
+{
+  "name": "Project-2",
+  "version": "1.0.0",
+  "description": "MEHN Stack project",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "hbs": "^4.0.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.4.16"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoshimaisami/Project-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yoshimaisami/Project-2/issues"
+  },
+  "homepage": "https://github.com/yoshimaisami/Project-2#readme"
+}
