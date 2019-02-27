@@ -3,7 +3,7 @@ const router = express.Router();
 
 const lessonController = require("../controllers/lesson");
 
-router.get("/", lessonController.index);
+// router.get("/", lessonController.index);
 router.get("/new", lessonController.new);
 router.post("/", lessonController.create);
 router.get("/:id", lessonController.show);
