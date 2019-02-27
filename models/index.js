@@ -9,7 +9,8 @@ const LessonSchema = new Schema({
   materials: String,
   prerequs: String,
   agelevel: String,
-  instructions: String
+  instructions: String,
+  status: Boolean
 });
 
 module.exports = mongoose.model("Lesson", LessonSchema);

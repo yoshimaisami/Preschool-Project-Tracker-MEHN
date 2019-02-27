@@ -1,1 +1,9 @@
-<h1>Show</h1>
+{{!-- <h1>Show</h1> --}}
+
+<h2>{{lesson.title}}</h2>
+<p>{{lesson.description}}</p>
+{{#if lesson.status}}
+<p>Status: ✅</p>
+{{else}}
+<p>Status: ❌</p>
+{{/if}}

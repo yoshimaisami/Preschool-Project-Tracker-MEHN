@@ -1,0 +1,33 @@
+Questions:
+
+commit: build out view/controller for index and show
+https://git.generalassemb.ly/Zakk/WDI-28-To-Do/commit/d364645e6de4bc2b9158697b0195de34340d9393
+
+#Do I need the status... hope not?
+
+  Item.create({
+    name: "Finish homework",
+    description: "???",
+    status: false
+    status: true
+  });
+});
+
+
+#Why Plural Lessons in routes/index.js
+
+
+
+# do I need status???
+
+<h1>Index</h1> 
+<h1>To Dos</h1>
+
+{{#if items}}
+<ul>
+  {{#each items }}
+  <li>
+    <a href="/item/{{id}}">{{name}} - {{status}}</a>
+  </li>
+  {{/each}}
+</ul>

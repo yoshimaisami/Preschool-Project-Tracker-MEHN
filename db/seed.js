@@ -12,11 +12,12 @@ Lesson.remove({}).then(function() {
       "Cardboard, Paper, Mailing Tape, Vinegar, Baking-soda, Dish-soap, Red & Yeallow Food-coloring",
     prerequs: "Scissors 101",
     agelevel: "4 - 6",
-    instructions: "Make a Volcano. (ADD STEP-by-STEP GUIDE)"
+    instructions: "Make a Volcano. (ADD STEP-by-STEP GUIDE)",
+    status: true
   });
 
   Lesson.create({
-    title: "Volcano",
+    title: "Tin Foil Boats",
     author: "Yoshi Maisami",
     description: "Cardboard Volcano",
     time: "3 Hours",
@@ -24,11 +25,12 @@ Lesson.remove({}).then(function() {
       "Cardboard, Paper, Mailing Tape, Vinegar, Baking-soda, Dish-soap, Red & Yeallow Food-coloring",
     prerequs: "Scissors 101",
     agelevel: "4 - 6",
-    instructions: "Make a Volcano. (ADD STEP-by-STEP GUIDE)"
+    instructions: "Make a Volcano. (ADD STEP-by-STEP GUIDE)",
+    status: false
   });
 
   Lesson.create({
-    title: "Volcano",
+    title: "Balloon Cannon",
     author: "Yoshi Maisami",
     description: "Cardboard Volcano",
     time: "3 Hours",
@@ -36,6 +38,7 @@ Lesson.remove({}).then(function() {
       "Cardboard, Paper, Mailing Tape, Vinegar, Baking-soda, Dish-soap, Red & Yeallow Food-coloring",
     prerequs: "Scissors 101",
     agelevel: "4 - 6",
-    instructions: "Make a Volcano. (ADD STEP-by-STEP GUIDE)"
+    instructions: "Make a Volcano. (ADD STEP-by-STEP GUIDE)",
+    status: false
   });
 });
