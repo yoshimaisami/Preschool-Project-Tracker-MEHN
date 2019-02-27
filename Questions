@@ -31,3 +31,16 @@ https://git.generalassemb.ly/Zakk/WDI-28-To-Do/commit/d364645e6de4bc2b9158697b01
   </li>
   {{/each}}
 </ul>
+
+
+
+#controller/lesson???
+  const { name, description } = req.body;
+    Item.create({
+      name,
+      description,
+      status: false
+    }).then(item => {
+      res.redirect(`/item/${item._id}`);
+    });
+

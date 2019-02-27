@@ -9,7 +9,16 @@ module.exports = {
     res.render("lesson/new");
   },
   create: function(req, res) {
-    res.redirect("/");
+    // res.redirect("/");
+
+    const { title, description } = req.body;
+    Lesson.create({
+      title,
+      description,
+      status: false
+    }).then(lesson => {
+      res.redirect(`/lesson/${lesson._id}`);
+    });
   },
 
   // /lesson/:id ???
