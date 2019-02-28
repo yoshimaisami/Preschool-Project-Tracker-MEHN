@@ -35,10 +35,11 @@ module.exports = {
       description,
       status: status === "on"
     }).then(lesson => {
-      //lesson.feedbacks.push({ content }); //from Twitter Ex
+      lesson.feedbacks.push({ content }); //from Twitter Ex
       res.redirect(`/lesson/${lesson._id}`);
     });
   },
+
   delete: function(req, res) {
     Lesson.remove({ _id: req.params.id }).then(lesson => {
       console.log(lesson);
