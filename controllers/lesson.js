@@ -1,16 +1,10 @@
 const Lesson = require("../models/index");
 
 module.exports = {
-  // index: function(req, res) {
-  //   res.send("index");
-  // },
-
   new: function(req, res) {
     res.render("lesson/new");
   },
   create: function(req, res) {
-    // res.redirect("/");
-
     const { title, description } = req.body;
     Lesson.create({
       title,
@@ -21,24 +15,17 @@ module.exports = {
     });
   },
 
-  // /lesson/:id ???
-
   show: function(req, res) {
-    // res.render("lesson/show");
-
     Lesson.findById(req.params.id).then(lesson => {
       res.render("lesson/show", { lesson });
     });
   },
   edit: function(req, res) {
-    // res.render("lesson/edit");
-
     Lesson.findById(req.params.id).then(lesson => {
       res.render("lesson/edit", { lesson });
     });
   },
   update: function(req, res) {
-    // res.redirect("/");
     const { title, description, status } = req.body;
 
     Lesson.findByIdAndUpdate(req.params.id, {
@@ -50,6 +37,9 @@ module.exports = {
     });
   },
   delete: function(req, res) {
-    res.redirect("/");
+    Lesson.remove({ _id: req.params.id }).then(lesson => {
+      console.log(lesson);
+      res.redirect("/");
+    });
   }
 };
