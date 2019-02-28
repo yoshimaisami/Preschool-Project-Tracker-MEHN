@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Lesson = require("../models/index");
+const { Lesson } = require("../models/index");
 
 router.get("/", function(req, res) {
   Lesson.find({}).then(lessons => {

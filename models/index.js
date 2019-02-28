@@ -1,7 +1,13 @@
 const mongoose = require("../db/connection");
 const Schema = mongoose.Schema;
 
-const LessonSchema = new Schema({
+const Feedback = new Schema({
+  title: String,
+  author: String,
+  content: String
+});
+
+const Lesson = new Schema({
   title: String,
   author: String,
   description: String,
@@ -10,7 +16,28 @@ const LessonSchema = new Schema({
   prerequs: String,
   agelevel: String,
   instructions: String,
-  status: Boolean
+  status: Boolean,
+  feedbacks: [Feedback]
 });
 
-module.exports = mongoose.model("Lesson", LessonSchema);
+module.exports = {
+  Lesson: mongoose.model("Lesson", Lesson),
+  Feedback: mongoose.model("Feedback", Feedback)
+};
+
+// const Lesson = new Schema({
+//   title: String,
+//   author: String,
+//   description: String,
+//   time: String,
+//   materials: String,
+//   prerequs: String,
+//   agelevel: String,
+//   instructions: String,
+//   status: Boolean,
+//   feedback: {
+//     type: Schema.Types.ObjectId,
+//     ref: "Feedback"
+//   },
+//   feedbacks: [Feedback]
+// });
