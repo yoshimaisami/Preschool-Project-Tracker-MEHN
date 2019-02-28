@@ -1,1 +1,25 @@
-<h1>Edit</h1>
+{{!-- <h1>Edit</h1> --}}
+
+<h2>Edit Lesson</h2>
+
+<form action="/lesson/{{lesson.id}}?_method=PUT" method="post">
+    <p>
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title" value="{{lesson.title}}">
+    </p>
+    <p>
+        <label for="description">Description:</label>
+        <textarea name="description" id="" cols="30" rows="10">{{lesson.description}}</textarea>
+    </p>
+    <p>
+        <label for="status">Status:</label>
+        {{#if lesson.status}}
+        <input type="checkbox" name="status" id="status" checked>
+        {{else}}
+        <input type="checkbox" name="status" id="status">
+        {{/if}}
+    </p>
+    <p>
+        <input type="submit" value="Save">
+    </p>
+</form>

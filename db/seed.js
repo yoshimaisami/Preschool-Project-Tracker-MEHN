@@ -19,7 +19,7 @@ Lesson.remove({}).then(function() {
   Lesson.create({
     title: "Tin Foil Boats",
     author: "Yoshi Maisami",
-    description: "Cardboard Volcano",
+    description: "Students place matbles on-top of boats made of tin foil",
     time: "3 Hours",
     materials:
       "Cardboard, Paper, Mailing Tape, Vinegar, Baking-soda, Dish-soap, Red & Yeallow Food-coloring",

@@ -31,10 +31,23 @@ module.exports = {
     });
   },
   edit: function(req, res) {
-    res.render("lesson/edit");
+    // res.render("lesson/edit");
+
+    Lesson.findById(req.params.id).then(lesson => {
+      res.render("lesson/edit", { lesson });
+    });
   },
   update: function(req, res) {
-    res.redirect("/");
+    // res.redirect("/");
+    const { title, description, status } = req.body;
+
+    Lesson.findByIdAndUpdate(req.params.id, {
+      title,
+      description,
+      status: status === "on"
+    }).then(lesson => {
+      res.redirect(`/lesson/${lesson._id}`);
+    });
   },
   delete: function(req, res) {
     res.redirect("/");
