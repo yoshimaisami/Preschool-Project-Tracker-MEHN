@@ -6,7 +6,7 @@ Questions:
 commit: build out view/controller for index and show
 https://git.generalassemb.ly/Zakk/WDI-28-To-Do/commit/d364645e6de4bc2b9158697b0195de34340d9393
 
-#Do I need the status... hope not?
+#Use "status" for Completed 
 
   Item.create({
     name: "Finish homework",
@@ -20,8 +20,7 @@ https://git.generalassemb.ly/Zakk/WDI-28-To-Do/commit/d364645e6de4bc2b9158697b01
 #Why Plural Lessons in routes/index.js
 
 
-
-# do I need status???
+# use status for completed?
 
 <h1>Index</h1> 
 <h1>To Dos</h1>
