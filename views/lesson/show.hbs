@@ -1,12 +1,13 @@
 <h2>{{lesson.title}}</h2>
 <p>{{lesson.description}}</p>
-{{#if lesson.status}}
-<p>Status: ✅</p>
-{{else}}
-<p>Status: ❌</p>
-{{/if}}
 
-<a href="/lesson/{{lesson.id}}/edit">Edit</a>
+
+<form action="/lesson/{{lesson.id}}/edit" method="get">
+    <input type="submit" value="Edit">
+</form>
+
+<br>
+<br>
 
 <form action="/lesson/{{lesson.id}}?_method=DELETE" method="post">
     <input type="submit" value="Delete">
@@ -14,6 +15,5 @@
 
 
 {{#each lesson.feedbacks}}
-{{this}}
-
+{{content}}
 {{/each}}
