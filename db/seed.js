@@ -13,7 +13,7 @@ Lesson.remove({}).then(function() {
     prerequs: "Scissors 101",
     agelevel: "4 - 6",
     instructions: "Make a Volcano. (ADD STEP-by-STEP GUIDE)",
-    feedbacks: [{ title: "grateful", author: "Sara", content: "kids loved it" }]
+    feedbacks: [{ title: "Grateful", author: "Sara Bell", content: "The studnets in Rainbow AM Class loved it. Thank you for the lesson" }]
   });
 
   Lesson.create({
