@@ -12,8 +12,8 @@ Lesson.remove({}).then(function() {
       "Cardboard, Paper, Mailing Tape, Vinegar, Baking-soda, Dish-soap, Red & Yeallow Food-coloring",
     prerequs: "Scissors 101",
     agelevel: "4 - 6",
-    instructions: "Make a Volcano. (ADD STEP-by-STEP GUIDE)"
-    // feedbacks: [{ title: "grateful", author: "Sara", content: "kids loved it" }]
+    instructions: "Make a Volcano. (ADD STEP-by-STEP GUIDE)",
+    feedbacks: [{ title: "grateful", author: "Sara", content: "kids loved it" }]
   });
 
   Lesson.create({
@@ -25,8 +25,10 @@ Lesson.remove({}).then(function() {
       "Cardboard, Paper, Mailing Tape, Vinegar, Baking-soda, Dish-soap, Red & Yeallow Food-coloring",
     prerequs: "Scissors 101",
     agelevel: "4 - 6",
-    instructions: "Make a Volcano. (ADD STEP-by-STEP GUIDE)"
-    // feedbacks: [{ title: "wonderful", author: "Mary", content: "kids loved it" }]
+    instructions: "Make a Volcano. (ADD STEP-by-STEP GUIDE)",
+    feedbacks: [
+      { title: "wonderful", author: "Mary", content: "kids loved it" }
+    ]
   });
 
   Lesson.create({
@@ -38,7 +40,9 @@ Lesson.remove({}).then(function() {
       "Cardboard, Paper, Mailing Tape, Vinegar, Baking-soda, Dish-soap, Red & Yeallow Food-coloring",
     prerequs: "Scissors 101",
     agelevel: "4 - 6",
-    instructions: "Make a Volcano. (ADD STEP-by-STEP GUIDE)"
-    // feedbacks: [{ title: "awesome", author: "Judith", content: "kids loved it" }]
+    instructions: "Make a Volcano. (ADD STEP-by-STEP GUIDE)",
+    feedbacks: [
+      { title: "awesome", author: "Judith", content: "kids loved it" }
+    ]
   });
 });

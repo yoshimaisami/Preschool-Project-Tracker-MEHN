@@ -2,18 +2,23 @@
 <p>{{lesson.description}}</p>
 
 
-<form action="/lesson/{{lesson.id}}/edit" method="get">
+<br>
+<br>
+
+<form class="waves-effect waves-light btn-large" action="/lesson/{{lesson.id}}/edit" method="get">
     <input type="submit" value="Edit">
 </form>
 
 <br>
 <br>
 
-<form action="/lesson/{{lesson.id}}?_method=DELETE" method="post">
+<form class="waves-effect waves-light btn-large" action="/lesson/{{lesson.id}}?_method=DELETE" method="post">
     <input type="submit" value="Delete">
 </form>
 
-
+{{!-- {{if }} --}}
 {{#each lesson.feedbacks}}
-{{content}}
+<p>{{title}}</p>
+<p>{{author}}</p>
+<p>{{content}}</p>
 {{/each}}

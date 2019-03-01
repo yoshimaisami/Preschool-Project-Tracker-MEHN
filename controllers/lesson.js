@@ -1,4 +1,4 @@
-const { Lesson, Feedback } = require("../models/index"); //from Twitter Ex
+const { Lesson, Feedback } = require("../models/index");
 
 module.exports = {
   new: function(req, res) {
@@ -16,11 +16,9 @@ module.exports = {
   },
 
   show: function(req, res) {
-    Lesson.findById(req.params.id)
-      .populate("content feedbacks.content") //from Twitter Ex
-      .then(lesson => {
-        res.render("lesson/show", { lesson });
-      });
+    Lesson.findById({ _id: req.params.id }).then(lesson => {
+      res.render("lesson/show", { lesson });
+    });
   },
 
   edit: function(req, res) {
@@ -35,7 +33,7 @@ module.exports = {
       description,
       status: status === "on"
     }).then(lesson => {
-      lesson.feedbacks.push({ content }); //from Twitter Ex
+      lesson.feedbacks.push({ content });
       res.redirect(`/lesson/${lesson._id}`);
     });
   },

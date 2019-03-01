@@ -5,6 +5,7 @@ const methodOverride = require("method-override");
 
 app.set("view engine", "hbs");
 app.use(parser.urlencoded({ extended: true }));
+app.use(express.static("public"));
 app.use(methodOverride("_method"));
 
 app.use(require("./routes/index"));

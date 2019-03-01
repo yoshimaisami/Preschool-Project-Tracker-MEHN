@@ -4,11 +4,16 @@
 <ul>
     {{#each lessons }}
     <li>
-        <a href="/lesson/{{id}}">{{title}}</a>
+        <a href="/lesson/{{id}}">gg{{title}}</a>
 
     </li>
     {{/each}}
 </ul>
 {{/if}}
 
-<a href="/lesson/new">Add a new Lesson</a>
+<br>
+<br>
+
+<form action="/lesson/{{lesson.id}}/lesson/new" method="get">
+    <input class="waves-effect waves-light btn-large" type="submit" value="Add Lessons">
+</form>
