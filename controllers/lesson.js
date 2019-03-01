@@ -8,8 +8,7 @@ module.exports = {
     const { title, description } = req.body;
     Lesson.create({
       title,
-      description,
-      status: false
+      description
     }).then(lesson => {
       res.redirect(`/lesson/${lesson._id}`);
     });
@@ -27,13 +26,11 @@ module.exports = {
     });
   },
   update: function(req, res) {
-    const { title, description, status } = req.body;
+    const { title, description } = req.body;
     Lesson.findByIdAndUpdate(req.params.id, {
       title,
-      description,
-      status: status === "on"
+      description
     }).then(lesson => {
-      lesson.feedbacks.push({ content });
       res.redirect(`/lesson/${lesson._id}`);
     });
   },

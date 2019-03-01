@@ -10,4 +10,10 @@ app.use(methodOverride("_method"));
 
 app.use(require("./routes/index"));
 
-app.listen(3300, () => console.log("listening on port 3300"));
+// app.listen(3300, () => console.log("listening on port 3300"));
+
+app.set("port", process.env.PORT || 3300);
+
+app.listen(app.get("port"), () => {
+  console.log(`✅ PORT: ${app.get("port")} 🌟`);
+});
