@@ -40,5 +40,17 @@ module.exports = {
       console.log(lesson);
       res.redirect("/");
     });
+  },
+  feedback: function(req, res) {
+    const feedback = {
+      author: req.body.author,
+      content: req.body.content
+    };
+    Lesson.findOneAndUpdate(
+      { _id: req.params.id },
+      { $push: { feedbacks: feedback } }
+    ).then(lesson => {
+      res.redirect(`/lesson/${lesson._id}`);
+    });
   }
 };

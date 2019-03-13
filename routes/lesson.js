@@ -8,5 +8,6 @@ router.get("/:id", lessonController.show);
 router.get("/:id/edit", lessonController.edit);
 router.put("/:id", lessonController.update);
 router.delete("/:id", lessonController.delete);
+router.put("/:id/feedback", lessonController.feedback);
 
 module.exports = router;

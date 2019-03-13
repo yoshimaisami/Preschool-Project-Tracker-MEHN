@@ -20,6 +20,29 @@
 <br>
 
 {{#each lesson.feedbacks}}
-<p>{{author}}</p>
-<p>{{content}}</p>
+<div class="card">
+    <p>{{author}}</p>
+    <p>{{content}}</p>
+</div>
 {{/each}}
+
+
+<h2>Provide Lesson Feedback</h2>
+
+<form action="/lesson/{{lesson._id}}/feedback?_method=PUT" method="post">
+    <p>
+        <label for="author">Instructor:</label>
+        <input type="text" name="author" id="author">
+    </p>
+
+    <p>
+        <label for="content">Feedback:</label>
+        <textarea name="content" id="" cols="30" rows="10"></textarea>
+    </p>
+
+    <p>
+        <input class="waves-effect waves-light btn-large" type="submit" value="Save">
+    </p>
+
+
+</form>

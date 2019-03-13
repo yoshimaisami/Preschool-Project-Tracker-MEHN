@@ -20,6 +20,5 @@ const Lesson = new Schema({
 });
 
 module.exports = {
-  Lesson: mongoose.model("Lesson", Lesson),
-  Feedback: mongoose.model("Feedback", Feedback)
+  Lesson: mongoose.model("Lesson", Lesson)
 };
