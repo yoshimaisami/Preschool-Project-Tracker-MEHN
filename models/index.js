@@ -4,7 +4,6 @@ const Schema = mongoose.Schema;
 const Feedback = new Schema({
   author: String,
   content: String
-  // add key for lesson id
 });
 
 const Lesson = new Schema({
