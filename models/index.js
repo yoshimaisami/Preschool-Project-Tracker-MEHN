@@ -2,9 +2,9 @@ const mongoose = require("../db/connection");
 const Schema = mongoose.Schema;
 
 const Feedback = new Schema({
-  title: String,
   author: String,
   content: String
+  // add key for lesson id
 });
 
 const Lesson = new Schema({

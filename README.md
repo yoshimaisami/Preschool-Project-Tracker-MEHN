@@ -2,7 +2,7 @@
 
 Simple web-application for NCRC preschool teachers to keep-track-of, share and comment on STEAM [Science, Technology, Engineering, Arts and Mathematics] related projects/lessons.
 
-![preview](https://drive.google.com/file/d/1zKb4Mg5CL_kc-8gJkjP7T_yHgUKK67--/view?usp=sharing)
+Sketch: https://photos.app.goo.gl/vruL3HwLckR2kBHL9
 
 ## Current Features
 

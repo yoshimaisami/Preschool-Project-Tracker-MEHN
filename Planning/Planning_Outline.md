@@ -1,12 +1,15 @@
 # Planning for Project 2
 
-# MVP: STEAMers’ Lesson Library
+## MVP: STEAMers’ Lesson Library
 
-## Intro: build a simple way for NCRC preschool teachers to keep-track-of, share and comment on STEAM [Science, Technology, Engineering, Arts and Mathematics] related projects/lessons.
+## Intro:
+
+Build a simple way for NCRC preschool teachers to keep-track-of, share and comment on STEAM [Science, Technology, Engineering, Arts and Mathematics] related projects/lessons.
 
 ## Models:
 
-- 1. Lessons: CRUD
+### 1. Lessons: CRUD
+
 - Title:
 - Author: [Instructor(s)’ Name]
 - Description
@@ -17,12 +20,14 @@
 - Instructions
 - Attachments [photos/videos]
 
-- 2. Feedback: CRUD
+### 2. Feedback: CRUD
+
 - Title of the Lesson they’re commenting on
 - Author of the comment
 - feedback/comment
 
-- 3. Users [aka Instructors] //Note: will add User model if there’s time to attempt Authentication .
+### 3. Users [aka Instructors] //Note: will add User model if there’s time to attempt Authentication .
+
 - Name
 - Email
 - SME [subject matter expertise]
